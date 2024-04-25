@@ -1,0 +1,181 @@
+body {
+    background: rgb(197, 155, 255);
+    background-image: url(sky1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(81, 7, 120);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background: #510778;
+    padding: 20px;
+    height: 50px;
+    text-align: left;
+    position: sticky;
+    top: 0px;
+}
+
+header a {
+    color:  white;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+header .logo a {
+    background-image: url(logo.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+nav {
+    margin-left: 210px;
+    text-decoration: none;
+}
+
+nav a.pages:hover {
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 50px;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 3px; 
+    padding: 5px; 
+}
+
+nav ul .heading {
+    position: relative;
+    left: 700px;
+}
+
+.heading {
+    color: white;
+    margin-right: 210px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+    nav, .heading {
+        margin:0;
+        display: flex;
+        justify-content: center;
+    }
+    #aboutmaria {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Picture shuffle */
+
+.picture-shuffle {
+    width: 100%;
+    z-index: -2;
+    position: fixed;
+    top: 20px;
+}
+
+.shuffle {
+    display: none;
+    text-align: center; 
+}
+  
+.shuffle img {
+    height: 800px;
+    border: 15px solid white;
+    border-radius: 50px;
+}
+
+.shuffle.active {
+    height: 100px;
+    display: block;
+}
+  
+.shuffle figcaption {
+    width: 100%;
+    color: white;
+    z-index: -1;
+    margin-top: 25px; 
+}
+
+/* Cat pictures */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.images-row {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.image-container {
+    text-align: justify; 
+    width: 410px;
+    color: white;
+    margin: 30px;
+}
+.toggle-image {
+    border: 20px solid white;
+    border-radius: 50%;
+    width: 400px;
+    
+}
+.image-text {
+    text-align: center; 
+    padding: 10px;
+    width: 100%; 
+    font-size: 20px;
+    margin-top: 5px; 
+    
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+/* Footer */
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+p.ps a {
+    color: inherit;
+}
