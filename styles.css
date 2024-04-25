@@ -94,6 +94,10 @@ nav ul .heading {
 
 /* Picture shuffle */
 
+.shuffle img:hover {
+    cursor: pointer;
+}
+
 .picture-shuffle {
     width: 100%;
     z-index: -2;
@@ -148,6 +152,11 @@ nav ul .heading {
     color: white;
     margin: 30px;
 }
+
+.toggle-image:hover {
+    cursor: pointer;
+}
+
 .toggle-image {
     border: 20px solid white;
     border-radius: 50%;
